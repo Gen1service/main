@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City | Gen1Service</title>
+    <!-- favicon -->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="favicon/site.webmanifest">
+
+<!--  -->
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <meta name="google-site-verification" content="9zTAI04xfV5U09mFKTCMka52lH6LhBIR6EXDhRTW6Ho" />    
+    <link rel="stylesheet" href="contact.css"></head>
+<body>
+
+    <div id="main"> <!--start main-->
+
+        <div class="book-service">
+            <a href="tel:9411001216">Book Service 📲 9411001216
+            </a>   
+            </div>                
+
+       
+    
+    <div id="page1">
+        <nav class="navbar">
+
+            <div class="nav-left">
+                <a href="index.html"><span><img src="gen1 service logo.png" alt=""></span></a>
+            </div> <!--end nav left-->
+
+            <div class="nav-center">
+                <a href="services.html"><b>SERVICE▼</b></a>
+                <a href="city.html"><b>CITY▼</b></a>
+                <a href="brand.html"><b>BRANDS▼</b></a>
+                <a href="about.html"><b>ABOUT▼</b></a>
+
+                
+                
+            </div> <!--end nav center-->
+
+            <div class="nav-right">
+                <a href="city.html">CITY ▼</a>
+            </div> <!--end nav right-->
+
+                <div class="nav-right2">
+                    <a href="tel:9411001216"><i class="Click ri-phone-fill"></i></a>
+
+            </div>
+
+
+        </nav> <!--end nav-->
+
+        <div class="hamburger">
+            <i class="ri-menu-3-fill"></i>
+        </div>
+
+        <div class="navbar-mobile">
+            <div class="close-icon">
+                <i class="ri-close-circle-fill"></i>
+            </div>
+
+        
+            <a href="services.html">services</a>
+            <a href="about.html">about</a>
+            <a href="city.html">city</a>
+            <a href="brand.html">brand</a>
+            </div> <!--navbar-mobile-->
+    
+    <form action="https://formspree.io/f/mbjnbvdy" method="POST" id="form">
+
+        <div class="form-heading">
+            <p>Get in Touch  </p>
+        </div>
+
+      <label for="fullName">Full Name:</label>
+      <input type="text" id="fullName"  class="input" name="name" required placeholder="Enter Your Full Name"><br>
+      
+      <label for="basicDetails">Contact Number:</label>
+      <input type="tel" id="basicDetails" name="phone number" required class="input" pattern="[0-9]{10}" placeholder="Enter Your Contact Number"><br>
+      
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required class="input"  placeholder="Enter Your Email"><br> <br>
+      
+
+<!--       
+      <label for="sports">Select your favorite sports:</label><br> <br>
+        
+      <input type="checkbox" id="soccer" name="sports" value="Soccer">
+      <label for="soccer"> Soccer</label> 
+      
+      <input type="checkbox" id="basketball" name="sports" value="Basketball">
+      <label for="basketball"> Basketball</label>
+      
+      <input type="checkbox" id="baseball" name="sports" value="Baseball">
+      <label for="baseball"> Baseball</label> <br>
+      
+      <input type="checkbox" id="tennis" name="sports" value="Tennis">
+      <label for="tennis"> Tennis</label>
+      
+      <input type="checkbox" id="swimming" name="sports" value="Swimming">
+      <label for="swimming"> Swimming</label>
+      
+      
+
+
+         -->
+     
+      <input type="submit" class="submit" value="Submit">
+    </form>
+    
+
+        </div> <!-- end page1 -->
+
+    </div> <!--end main-->
+
+<script src="contact.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+<!--  -->
+<!-- 
+<label for="category">Select Service Product:</label>
+<select id="AC" name="service Product">
+
+  <option value="refrigerator" name="refrigerator">REFRIGERATOR</option>
+      <option value="ac" name="ac">AC | AIR CONDIDTINOR</option>
+      <option value="tv" name="led/lcd/tv">LED/LCD/TV</option>
+      <option value="washing machine" name="washing machine">WASHING MACHINE</option>
+      <option value="chimney" name="kitchen chimney">KITCHEN CHIMNEY</option>    
+      <option value="mircowave" name="mircowave oven">MICROWAVE OVEN </option>
+      <option value="camera" name="cctv camera">CCTV CAMERA</option>    
+      <option value="laptop" name="laptop">LAPTOP</option>
+
+      
+</select><br>
+
+
+<label for="city" name="location">Select Your Location </label>
+<select id="city" onchange="populateAreas()">
+<option value="none" name="city">My City is </option>
+<option value="mzn" name="Muzaffarnagar">Muzaffarnagar</option>
+<option value="meerut" name="meerut">Meerut</option>
+<option value="delhi" name="delhi">Delhi</option>
+<option value="ghaziabad" name="ghaziabad">Ghaziabad</option>
+<option value="gurgaon" name="gurgaon">Gurgaon</option>
+<option value="greater noida" name="greater noida">Greater Noida</option>
+<option value="noida" name="noida">Noida</option>
+<option value="faridabad" name="faridabad">Faridabad</option>
+
+</select>
+
+<br> 
+
+<div id="areaContainer" style="display: none;">
+<label for="area">Select Your area:</label>
+<select id="area" onchange="populateVillages()">
+
+</select>
+</div>
+
+
+<div id="villageContainer" style="display: none;">
+<label for="village">Select your village name:</label>
+<select id="village">
+
+</select>
+</div>
+
+<div> 
+ -->
