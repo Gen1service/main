@@ -53,9 +53,23 @@ body {
     top: 50vh;
     }
     .call-text a:hover{
-        background-color: #096822;
-        color: #f3f710;
+        background-color: #65f412;
+        color: #061342;
         box-shadow: 15px 15px 666px;
+    }
+    .call-text a {
+        -webkit-animation: action 1s infinite  alternate;
+        animation: action 1s infinite  alternate;
+    }
+    
+    @-webkit-keyframes action {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-10px); }
+    }
+    
+    @keyframes action {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-10px); }
     }
 
 
@@ -209,7 +223,13 @@ margin-left: 3vw;
 .page1-btns {
     margin-top: 49vh;
     margin-left: 10vw;
+    transition-duration: .2s, 1s;
+    position: absolute;
+
 }
+.page1-btns {
+    animation: zoom-in-zoom-out 2s ease infinite;}
+
 
 /* navbar for mobile */
 
@@ -452,13 +472,14 @@ margin-top: 4vh;
 }
 
 #refrigerator-box h2{
-    font-size: 3.5vh;
+    font-size: 2.8vh;
     text-transform: capitalize;
     text-align: center;
     margin-left: -1vw;
     margin-top: 4vh;
     color: var(--text);
     border-radius: 5px;
+    font-family: poppins;
 }
 #refrigerator-box pre{
     font-size: 1.3vw;
@@ -471,10 +492,11 @@ margin-top: 4vh;
 
 #ac-box h2{
     text-align: center;
-    font-size: 3.5vh;
+    font-family: poppins;
+    font-size: 2.5vh;
     text-transform: capitalize;
     margin-left: -1vw;
-    margin-top: 3.5vh;
+    font-size: 3vh;
     color: var(--text);
 }
 #ac-box pre{
@@ -487,8 +509,9 @@ margin-top: 4vh;
 #tv-box h2{
     text-align: center;
     margin-left: -1vw;
+    font-family: poppins;
     margin-top: 4vh;
-    font-size: 3.5vh;
+    font-size: 2.8vh;
     text-transform: capitalize;
     color: var(--text);
 }
@@ -501,8 +524,9 @@ margin-top: 4vh;
 
 #washingMachine-box h2{
     text-align: center;
+    font-family: poppins;
     margin-left: -1vw;
-    font-size: 3.5vh;
+    font-size: 2.8vh;
     text-transform: capitalize;
     margin-top: 4vh;
     color: var(--text);
@@ -516,9 +540,10 @@ margin-top: 4vh;
 
 
 #chimni-box h2{
-    font-size: 3.5vh;
+    font-size: 2.8vh;
     text-transform: capitalize;
     text-align: center;
+    font-family: poppins;
     margin-left: -1vw;
     margin-top: 2vh;
     color: var(--text);
@@ -534,8 +559,8 @@ margin-top: 4vh;
 #mircowave-box h2{
     text-align: center;
     margin-left: -1vw;
-    margin-top: 2vh;
-    font-size: 3.5vh;
+    margin-top: 2vh;    font-family: poppins;
+    font-size: 2.8vh;
     text-transform: capitalize;
     color: var(--text);
 }
