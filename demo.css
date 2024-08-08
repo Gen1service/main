@@ -643,6 +643,7 @@ margin-top: 4vh;
 }
 .card-list .card-item .user-image{
 	width: 150px;
+    margin-top: 10px;
 	height: 150px;
 	border-radius: 50%;
 	margin-bottom: 40px;
@@ -657,23 +658,6 @@ margin-top: 4vh;
 	margin: 14px 0 40px;
 }
 
-.card-list .card-item .message-button{
-	font-size: 1.25rem;
-	padding: 10px 35px;
-	color: #030728;
-	border-radius: 6px;
-	font-weight: 500;
-	cursor: pointer;
-	background: #fff;
-	border: 1px solid transparent;
-	transition: 0.2s ease;
-}
-
-.card-list .card-item .message-button:hover{
-	background: rgba(255, 255, 255, 0.1);
-	border: 1px solid #fff;
-	color: #fff;
-}
 
 .slider-wrapper .swiper-pagination-bullet {
 	background: #fff;
@@ -1287,7 +1271,7 @@ overflow-y: hidden;
 
 
 #page4 {
-height: 260vh;
+height: 20vh;
     width: 100%;
     background-color: var(--background2);
     position: relative;
@@ -1302,7 +1286,7 @@ height: 260vh;
     font-weight: 100;
 }
 
-#page4 p{
+/* #page4 p{
     font-size: 8vw;
 }
 
@@ -1380,14 +1364,14 @@ height: 260vh;
     font-weight: normal;
     padding: 0 2vw;
     margin-top: 2vh;
-}
+} */
 
 /* page4 part 2 start */
 .page4-part2{
     height: 23vh;
     width: 100%;
     position: relative;
-    bottom: 5vh;
+    bottom: 90vh;
 }
 
 .page4-part2 h6{
