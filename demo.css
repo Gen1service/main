@@ -606,7 +606,7 @@ margin-top: 4vh;
 /* start page4 */
 
 #page4 {
-    min-height: 100vh;
+    min-height: 90vh;
     width: 100%;
     background-color: var(--background2);
     padding-bottom: 10vh;
@@ -638,8 +638,12 @@ margin-top: 4vh;
 	justify-content: center;
 	border-radius: 8px;
 	backdrop-filter: blur(30px);
-	background: rgba(255, 255, 255, 0.2);
+	background: rgba(205, 208, 249, 0.991);
 	border: 1px solid grey;
+}
+.user-name{
+	color: #073207;
+    text-transform: uppercase;
 }
 .card-list .card-item .user-image{
 	width: 150px;
@@ -653,8 +657,10 @@ margin-top: 4vh;
 
 .card-list .card-item .user-profession{
 	font-size: 1.15rem;
-	color: #e3e3e3;
+	color: #05010a;
 	font-weight: 500;
+    text-align: center;
+    font-family: Timmana;
 	margin: 14px 0 40px;
 }
 
