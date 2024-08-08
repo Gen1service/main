@@ -137,10 +137,10 @@ transition: 1s ease;
 .call-text a{
     text-decoration: none;
     position: fixed;
-    background-color: rgb(93, 233, 109);
-    color: rgb(21, 26, 6);
+    background-color: rgb(22, 5, 85);
+    color: rgb(135, 239, 23);
     padding: 0.4vw 0.8vw;
-    border: 1px solid #676060;
+    border: 1px solid #91ef15;
     z-index: 99;
     font-family: poppins;
     border-radius: 0.2vw;
@@ -152,7 +152,6 @@ transition: 1s ease;
         background-color: #096822;
         color: #f3f710;
         box-shadow: 15px 15px 666px;
-        border-radius: 10px;
     }
     .call-text a {
         -webkit-animation: action 1s infinite  alternate;
@@ -383,7 +382,7 @@ margin-left: 23vw;
 }
 
 #page1 h1{
-    font-size: 6vw;
+    font-size: 5vw;
     text-align: center;
     text-transform: uppercase;
     color: white;
@@ -430,6 +429,7 @@ color: #fff;
     z-index: 2;
     margin-top: 12vh;
     font-size: 1.4vw;
+    text-transform: capitalize;
 }
 
 .swiper-slide img {
@@ -519,6 +519,7 @@ scale: 1.1;
 .ac-card h2{
     font-size: 1.7vw;
 text-align: center;
+text-transform: capitalize;
 
 margin-top: 3vh;
 }
@@ -653,22 +654,6 @@ color: #66ec28;
     font-size: 1.1vw;
     font-family: poppins;
 }
-#page3 p {
-    animation-duration: 3s;
-    animation-name: slidein;
-  }
-  
-  @keyframes slidein {
-    from {
-      translate: 150vw 0;
-      scale: 200% 1;
-    }
-  
-    to {
-      translate: 0 0;
-      scale: 100% 1;
-    }
-  }
 
 /* end page3 */
 
@@ -741,6 +726,7 @@ color: #66ec28;
     margin-left: 3vw;
     margin-top: -2vh;
     margin-bottom: 3vh;
+    text-transform: capitalize;
 
 }
 /* +++ */
@@ -857,6 +843,7 @@ span a{
     padding-top: 3vh;
     padding-bottom: 2vh;
     text-wrap: balance;
+    text-transform: capitalize;
 }
 
 
@@ -921,7 +908,14 @@ margin-top: -9vh;
     font-family: poppins;
     margin-left: 42vw;
 }
-
+.page4-part2 a {
+    animation: zoom-in-zoom-out 2s ease infinite;
+    @keyframes zoom-in-zoom-out {
+        50% {
+          transform: scale(1.1, 1.1);
+        }
+                }
+            }
 .page4-part2 a:hover{
     background-color: var(--btnhover);
     transition: all linear 0.3s;
@@ -1178,17 +1172,18 @@ display: none;
     
 .book-service a{
     background-color: rgb(10, 10, 10);
-    font-size: 4vw;
-    padding: 1vw 0;
+    font-size: 5.5vw;
+    padding: 2.5vw 0;
     width: 100vw;
-    border: 1px solid #d5ec0c;
-    color: rgb(124, 247, 53);
+    border: 1px solid #000000;
+    color: rgb(19, 21, 19);
     font-weight: bold;
     text-align: center;
     position: fixed;
     z-index: 99;
     text-decoration: none;
     }
+    
     
     /* end media for page1 */
 
@@ -1631,7 +1626,7 @@ background-color: var(--btnhover);
 
 
 #page4 h2{
-    font-size: 5vw;
+    font-size: 3.5vw;
     text-wrap: balance;
 }
 
@@ -1655,6 +1650,7 @@ td,th{
     width: 100%;
     margin-top: -5vh;
 }
+
 
 .swiper {
     width: 100%;
@@ -1686,26 +1682,26 @@ color: #fff;
 
 /* page4 part 2 start */
 .page4-part2{
-    height: 22vh;
+    height: 16vh;
     width: 100%;
     position: relative;
     
 }
 
 .page4-part2 h6{
-    font-size: 5vw;
+    font-size: 4vw;
     padding-top: 3vh;
 }
 
 .page4-part2 h5{
-    font-size: 5vw;
+    font-size: 3.5vw;
 margin-bottom: 2vh;    
 }
 
 .page4-part2 a{
-    font-size: 3.5vw;
-    padding: 2vw 8vw;
-    margin-left:16vw;
+    font-size: 2.5vw;
+    padding: 2vw 6vw;
+    margin-left:28vw;
 
 }
 
