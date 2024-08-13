@@ -10,7 +10,6 @@
 
 :root {
     --background: #FFFFFF;
-    --background2: #003366;
     --text: #051145;
     --text2: #000;
     --btn: #2a786b;
@@ -925,9 +924,7 @@ margin-top: -9vh;
 
 /* start page6 */
 #page6{
-    height: 50vh;
-    width: 100%;
-    background-color: var(--background2);
+    overflow: hidden
 }
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
@@ -1837,10 +1834,6 @@ margin-bottom: 2vh;
 /* start page7 */
 
 #page6{
-    height: 98vh;
-    width: 100%;
-    background-color: var(--background2);
-
     overflow-y: hidden;
 }
 
