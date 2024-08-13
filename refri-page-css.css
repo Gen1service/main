@@ -10,6 +10,7 @@
 
 :root {
     --background: #FFFFFF;
+    --background2: #003366;
     --text: #051145;
     --text2: #000;
     --btn: #2a786b;
@@ -1834,7 +1835,7 @@ margin-bottom: 2vh;
 /* start page7 */
 
 #page6{
-    overflow-y: hidden;
+    align-items: center;
 }
 
 body{
@@ -2196,8 +2197,6 @@ font-size: 3.5vw;
 
 
     #page6{
-        height: 85vh;
-        padding-top: 5vh;
         
     }
 
