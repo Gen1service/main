@@ -51,9 +51,9 @@ a{
 	font-weight: 700;
 	text-decoration: none;
 }
-.logo a{
-	width: 150px;
-	height: 70px;
+.logo img{
+	width: 110px;
+	height: 45px;
 }
 
 
@@ -193,8 +193,8 @@ a{
 	}
 	.header .mobile-menu-trigger{
 		display: flex;
-		height: 30px;
-		width: 30px;
+		height: 8px;
+		width: 8px;
 		margin-left: 15px;
 		cursor: pointer;
 		align-items: center;
@@ -204,8 +204,9 @@ a{
 		display: block;
 		height: 2px;
 		background-color: #333333;
-		width: 24px;
+		width: 50px;
 		position: relative;
+		margin-bottom: 40px;
 	}
 	.header .mobile-menu-trigger span:before,
 	.header .mobile-menu-trigger span:after{
