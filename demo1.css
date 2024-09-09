@@ -213,8 +213,8 @@ a{
 		content: '';
 		position: absolute;
 		left:0;
-		width: 150%;
-		height: 110%;
+		width: 180%;
+		height: 120%;
 		background-color: #333333;
 	}
 	.header .mobile-menu-trigger span:before{
