@@ -519,39 +519,55 @@
 <!-- header end -->
 
 
-<div class="carousel">
-  <div class="carousel_inner">
-     <div class="carousel_item carousel_item__active">
-        <img src="images/slider -1.webp" alt="" class="carousel_img">
-        <div class="carousel_caption">
-           <h1 class="carousel_title"></h1>
-           <p class="carousel_description"></p>
-        </div>
-     </div>
-     <div class="carousel_item">
-        <img src="images/gk1.jpg" alt="" class="carousel_img">
-     </div>
-     <div class="carousel_item">
-        <img src="images/slider -3.webp" alt="" class="carousel_img">
-     </div>
+<!-- slider start -->
+
+
+<div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
 
-  <div class="carousel_indicator">
-     <button class="carousel_dot carousel_dot__active"></button>
-     <button class="carousel_dot"></button>
-     <button class="carousel_dot"></button>
+  <div class="carousel-inner">
+    <div class="carousel-item active c-item">
+      <img src="https://images.unsplash.com/photo-1579033461380-adb47c3eb938?fit=crop&w=1964&q=100" class="d-block w-100 c-img" alt="Slide 1">
+      <div class="carousel-caption top-0 mt-4">
+        <h1 class="mt-5 fs-3 text-uppercase">Expert Home Appliance Repair Servies in Delhi</h1>
+        <p class="display-1 fw-bolder text-capitalize">Delhi</p>
+        <button class="btn btn-primary px-4 py-2 fs-5 mt-5">Book a tour</button>
+      </div>
+    </div>
+    <div class="carousel-item c-item">
+      <img src="https://images.unsplash.com/photo-1516466723877-e4ec1d736c8a?fit=crop&w=2134&q=100" class="d-block w-100 c-img" alt="Slide 2">
+      <div class="carousel-caption top-0 mt-4">
+        <h2 class="text-uppercase fs-3 mt-5">Best Home Appliance Repair Experts in Delhi – All Brands Covered</h2>
+        <p class="display-1 fw-bolder text-capitalize">New Delhi</p>
+        <button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
+          data-bs-target="#booking-modal">Book a tour</button>
+      </div>
+    </div>
+    <div class="carousel-item c-item">
+      <img src="https://images.unsplash.com/photo-1612686635542-2244ed9f8ddc?fit=crop&w=2070&q=100" class="d-block w-100 c-img" alt="Slide 3">
+      <div class="carousel-caption top-0 mt-4">
+        <h2 class="text-uppercase fs-3 mt-5">Expert Appliance Repair in Delhi – AC, Refrigerator, Washing Machine & More</h2>
+        <p class="display-1 fw-bolder text-capitalize">Old Delhi</p>
+        <button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
+          data-bs-target="#booking-modal">Book a tour</button>
+      </div>
+    </div>
   </div>
-
-  <div class="carousel_control">
-     <button class="carousel_button carousel_button__prev">
-        <i class="fas fa-chevron-left"></i>
-     </button>
-     <button class="carousel_button carousel_button__next">
-        <i class="fas fa-chevron-right"></i>
-     </button>
-  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
 </div>
 
+<!-- slider end -->
 
  <!--cards start-->
  <div class="container py-5">
