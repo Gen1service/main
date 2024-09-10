@@ -313,6 +313,7 @@ a{
 	}
 	.header .menu > ul > li .sub-menu.mega-menu,
 	.header .menu > ul > li .sub-menu{
+		text-decoration: underline;
 		visibility: visible;
 		opacity: 1;
 		position: absolute;
@@ -686,6 +687,10 @@ strong{
 
 /* mobile-cards start */
 @media (max-width: 700px){
+	 h1 {
+		font-size: 18px;
+		text-transform: uppercase;
+	  }
 
 
 .card-img-top{
