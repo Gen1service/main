@@ -194,8 +194,8 @@ a{
 	}
 	.header .mobile-menu-trigger{
 		display: flex;
-		height: 8px;
-		width: 8px;
+		height: 15px;
+		width: 15px;
 		margin-right: 15px;
 		cursor: pointer;
 		align-items: center;
@@ -214,8 +214,8 @@ a{
 		content: '';
 		position: absolute;
 		left:0;
-		width: 180%;
-		height: 120%;
+		width: 100%;
+		height: 100%;
 		background-color: #333333;
 	}
 	.header .mobile-menu-trigger span:before{
@@ -391,40 +391,7 @@ a{
 	}
 	
 }
-@media screen and (max-width: 768px){
-	.heading h1{
-	  font-size: 45px;
-	  margin-top: 30px;
-	}
-	.hero{
-	  margin: 0px;
-		}
-		.container{
-		  width: 100%;
-		  flex-direction: column;
-		  margin: 0px;
-		  padding: 0px 40px;
-		}
-		.hero-content{
-		  width: 100%;
-		  margin: 35px 0px ;
-		}
-		.hero-content h2{
-		  font-size: 30px;
-		}
-		.hero-content p{
-		  font-size: 18px;
-		  margin-bottom: 20px;
-		}
-		.hero-content button{
-		  font-size: 16px;
-		  padding: 8px 16px;
-		}
-		.hero-image{
-		  width: 100%;
-  
-		}
-  }
+
   @keyframes fadeInUp {
 	0%{
 	  opacity: 0;
