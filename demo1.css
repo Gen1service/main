@@ -652,40 +652,84 @@ a{
     background-color: black;
     border: none;
 }
-h3,h5{
+h5{
     color: rgb(6, 84, 101);
 }
-.book-button{
+strong{
+	font-size: 25px;
+    color: rgb(6, 84, 101);
+}
+
+.book-button a{
+	padding: 8px 15px;
+	border: 2px solid #000000;
     border-radius: 50px;
 	font-weight: 500;
-    width: 120px;
 	background-color: rgb(134, 216, 235);
 	color: #000000;
 }
-.book-button:hover{
+.book-button:hover a{
+	border-radius: 50px;
+	border: 2px solid rgb(134, 216, 235);
     background-color: #000000;
 	color: rgb(134, 216, 235);
 	transform: scale(1.1);
 
 }
 
-.nevi-button{
+/* cards end */
+
+/* mobile-cards start */
+@media (max-width: 700px){
+
+
+.card-img-top{
+    border-radius: 35px;
+    padding: 20px;
+}
+.card{
+    border-radius: 30px;
+	height: 260px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+.card-body{
+    padding: 15px;
+    margin-top: -15px;
+	font-size: 7px;
+}
+.card-title{
+	font-size: 10px;
+}
+
+h5{
+    color: rgb(6, 84, 101);
+}
+strong{
+	font-size: 20px;
+    color: rgb(6, 84, 101);
+}
+
+.book-button a{
+	font-size: 9px;
+	padding: 4px 8px;
+	border: 2px solid #000000;
+    border-radius: 50px;
+	font-weight: 500;
+	background-color: rgb(134, 216, 235);
+	color: #000000;
+}
+.book-button:hover a{
 	border-radius: 50px;
-	width: 120px;
-	background-color: rgb(0, 0, 0);
-	color: rgb(134, 216, 235);
-	font-size: 25px;
-}
-.nevi-button:hover{
-	background-color: rgb(6, 116, 118);
-	color: white
-}
-.nevi-button a{
+	border: 2px solid rgb(134, 216, 235);
+    background-color: #000000;
 	color: rgb(134, 216, 235);
 	transform: scale(1.1);
 
 }
-/* cards end */
+}
+
+/* mobile-cards end */
+
 
 
 
