@@ -40,6 +40,7 @@ a{
 	z-index: 99;
 	padding:3px;
 	background-color: rgb(139, 205, 220);
+	animation: fadeInRight 2s ease;
 }
 .header .item-left{
 	flex:0 0 17%;
@@ -390,6 +391,60 @@ a{
 	}
 	
 }
+@media screen and (max-width: 768px){
+	.heading h1{
+	  font-size: 45px;
+	  margin-top: 30px;
+	}
+	.hero{
+	  margin: 0px;
+		}
+		.container{
+		  width: 100%;
+		  flex-direction: column;
+		  margin: 0px;
+		  padding: 0px 40px;
+		}
+		.hero-content{
+		  width: 100%;
+		  margin: 35px 0px ;
+		}
+		.hero-content h2{
+		  font-size: 30px;
+		}
+		.hero-content p{
+		  font-size: 18px;
+		  margin-bottom: 20px;
+		}
+		.hero-content button{
+		  font-size: 16px;
+		  padding: 8px 16px;
+		}
+		.hero-image{
+		  width: 100%;
+  
+		}
+  }
+  @keyframes fadeInUp {
+	0%{
+	  opacity: 0;
+	  transform: translateY(50px);
+	}
+	100%{
+	  opacity: 1;
+	  transform: translateY(0px);
+	}
+  }
+  @keyframes fadeInRight {
+	0%{
+	  opacity: 0;
+	  transform: translateX(-50px);
+	}
+	100%{
+	  opacity: 1;
+	  transform: translateX(0px);
+	}
+  }
 
 /* 
    Creator           : Coding's Time
@@ -409,9 +464,39 @@ a{
    box-sizing: border-box;
 }
 /* start slider */
-/* carousel */
+
+.header-text {
+	text-align: center;
+	display: grid;
+	place-items: center;
+	height: 80vh;
+	position: relative;
+	z-index: 9998;
+}
+.text-content h1 {
+	font-size: 80px;
+	text-transform: uppercase;
+}
+.text-content p {
+	width: 75%;
+	margin: auto;
+	line-height: 1.9;
+}
+
+
+
+
+
+
+
+
+
+
+
 .carousel{
    position: relative;
+   animation: fadeInUp 2s ease;
+
 }
 
 .carousel_inner{
@@ -562,7 +647,22 @@ a{
 .carousel_button:hover{
    color: rgba(135, 206, 250, .75);
 }
-/* slider end */
+@media (max-width: 500px) {
+	.carousel_img{
+		display: block;
+		width: 100%;
+		height: 300px;
+	 }
+	}	 
+	
+	/* slider end */
+
+
+
+
+
+
+
 /* cards start */
 
 .card-img-top{
@@ -598,6 +698,8 @@ h3,h5{
 .book-button:hover{
     background-color: #000000;
 	color: rgb(134, 216, 235);
+	transform: scale(1.1);
+
 }
 
 .nevi-button{
@@ -613,6 +715,8 @@ h3,h5{
 }
 .nevi-button a{
 	color: rgb(134, 216, 235);
+	transform: scale(1.1);
+
 }
 /* cards end */
 
