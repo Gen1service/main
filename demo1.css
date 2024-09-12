@@ -1,15 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-
 body{
-	line-height: 1.5;
-	font-family: 'Poppins', sans-serif;
-	font-weight: 400;
-	overflow-x: hidden;
-}
-*{
-	margin:0;
-	box-sizing: border-box;
-}
+	min-height: 100vh;
+	width: 100%;
+	background: #b4e2f0;
+	}
+
+
 :before,:after{
 	box-sizing: border-box;
 }
@@ -39,7 +35,8 @@ a{
 	position: relative;
 	z-index: 99;
 	padding:3px;
-	background-color: rgb(139, 205, 220);
+	background-color: hsl(193, 66%, 64%);
+	border: 2px solid rgb(2, 32, 50);
 	animation: fadeInRight 2s ease;
 }
 .header .item-left{
@@ -170,6 +167,7 @@ a{
 .header .item-right a:hover,
 .header .menu > ul > li:hover > a{
 	color:#ea4636;
+    background-color: #0077B5;
 }
 /* banner section */
 
@@ -313,7 +311,6 @@ a{
 	}
 	.header .menu > ul > li .sub-menu.mega-menu,
 	.header .menu > ul > li .sub-menu{
-		text-decoration: underline;
 		visibility: visible;
 		opacity: 1;
 		position: absolute;
@@ -414,13 +411,7 @@ a{
 	}
   }
 
-/* 
-   Creator           : Coding's Time
-   Youtube Channel   : https://www.youtube.com/channel/UC6dnKqrImGWqMb9ty1n0Ziw
-   Github Profile    : https://github.com/codingstime
- */
 
-/* reset */
 :root{
    font-family: "Raleway", sans-serif;
    font-size: 16px;
@@ -431,6 +422,42 @@ a{
    margin: 0;
    box-sizing: border-box;
 }
+/* General button style (reset) */
+.btn1 {
+	border: 2px solid #000000;
+	font-weight: 500;
+	background-color: rgb(15, 96, 114);
+	color: #000000;
+	padding: 8px 15px;
+	border-radius: 50px;
+	width: 120px;
+
+
+}
+.btn1:hover {
+	border-radius: 50px;
+	border: 2px solid rgb(134, 216, 235);
+    background-color: #000000;
+	color: rgb(134, 216, 235);
+	transform: scale(1.1);
+
+}
+.btn1 a{
+	color: #9ff9fc;
+}
+
+
+
+@media screen and (max-width: 25em) {
+
+	.codrops-icon span {
+		display: none;
+	}
+
+}
+
+
+/* end slider */
 /* start slider */
 
 .header-text {
@@ -639,7 +666,8 @@ a{
 }
 .card{
     border-radius: 30px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+	border: 2px solid red;
+	border: 1px solid rgb(2, 32, 50);
 }
 .card-body{
     padding: 25px;
@@ -687,19 +715,23 @@ strong{
 
 /* mobile-cards start */
 @media (max-width: 700px){
-	 h1 {
+		h1 {
 		font-size: 18px;
 		text-transform: uppercase;
+	  }
+	  p{
+		font-size: 12px;
+		font-weight: 500;
 	  }
 
 
 .card-img-top{
     border-radius: 35px;
     padding: 20px;
+	
 }
 .card{
     border-radius: 30px;
-	height: 260px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
 }
 .card-body{
@@ -755,13 +787,19 @@ strong{
 	object-fit: cover;
 	filter: brightness(0.6);
   }
-/* close slider */
+/* paragraph */
+
+.paragraph {
+	text-align: center;
+	font-weight: 500;
+	
+
+}
+	  
+	/*end paragraph  */
+	  
 	  
 	
-	  
-	  
-	
-	  /* end page5 */
 	  
 	  /* start page6 */
 	  #page6{
@@ -774,13 +812,8 @@ strong{
 	  box-sizing: border-box;
 	  font-family: "Poppins" , sans-serif;
 	  }
-	  body{
-	  min-height: 100vh;
-	  width: 100%;
-	  background: #EEECEB;
-	  }
 	  footer{
-	  background: #140B5C;
+	  background: #0b3e5c;
 	  width: 100%;
 	  bottom: 0;
 	  left: 0;
