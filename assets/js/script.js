@@ -15,5 +15,10 @@ let swiperCard = new Swiper(".card-testimonial", {
   breakpoints: {
     600: { slidesPerView: 2 },
     968: { slidesPerView: 3 },
+    1440: { slidesPerView: 4 },
+    1920: { slidesPerView: 5 },
+    2160: { slidesPerView: 5 },
+
+
   },
 });

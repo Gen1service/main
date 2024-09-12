@@ -4101,21 +4101,21 @@
       s({
         pagination: {
           el: null,
-          bulletElement: "span",
+          Element: "span",
           clickable: !1,
           hideOnClick: !1,
-          renderBullet: null,
+          render: null,
           renderProgressbar: null,
           renderFraction: null,
           renderCustom: null,
           progressbarOpposite: !1,
-          type: "bullets",
-          dynamicBullets: !1,
-          dynamicMainBullets: 1,
+          type: "s",
+          dynamics: !1,
+          dynamicMains: 1,
           formatFractionCurrent: (e) => e,
           formatFractionTotal: (e) => e,
-          bulletClass: `${r}-bullet`,
-          bulletActiveClass: `${r}-bullet-active`,
+          Class: `${r}-`,
+          ActiveClass: `${r}--active`,
           modifierClass: `${r}-`,
           currentClass: `${r}-current`,
           totalClass: `${r}-total`,
@@ -4129,7 +4129,7 @@
           paginationDisabledClass: `${r}-disabled`,
         },
       }),
-        (t.pagination = { el: null, $el: null, bullets: [] });
+        (t.pagination = { el: null, $el: null, s: [] });
       let l = 0;
       function o() {
         return (
@@ -4140,7 +4140,7 @@
         );
       }
       function c(e, s) {
-        const { bulletActiveClass: a } = t.params.pagination;
+        const { ActiveClass: a } = t.params.pagination;
         e[s]().addClass(`${a}-${s}`)[s]().addClass(`${a}-${s}-${s}`);
       }
       function p() {
@@ -4163,35 +4163,35 @@
               )),
               p > a - 1 - 2 * t.loopedSlides && (p -= a - 2 * t.loopedSlides),
               p > u - 1 && (p -= u),
-              p < 0 && "bullets" !== t.params.paginationType && (p = u + p))
+              p < 0 && "s" !== t.params.paginationType && (p = u + p))
             : (p = void 0 !== t.snapIndex ? t.snapIndex : t.activeIndex || 0),
-          "bullets" === s.type &&
-            t.pagination.bullets &&
-            t.pagination.bullets.length > 0)
+          "s" === s.type &&
+            t.pagination.s &&
+            t.pagination.s.length > 0)
         ) {
-          const a = t.pagination.bullets;
+          const a = t.pagination.s;
           let i, o, u;
           if (
-            (s.dynamicBullets &&
+            (s.dynamics &&
               ((n = a
                 .eq(0)
                 [t.isHorizontal() ? "outerWidth" : "outerHeight"](!0)),
               r.css(
                 t.isHorizontal() ? "width" : "height",
-                n * (s.dynamicMainBullets + 4) + "px"
+                n * (s.dynamicMains + 4) + "px"
               ),
-              s.dynamicMainBullets > 1 &&
+              s.dynamicMains > 1 &&
                 void 0 !== t.previousIndex &&
                 ((l += p - (t.previousIndex - t.loopedSlides || 0)),
-                l > s.dynamicMainBullets - 1
-                  ? (l = s.dynamicMainBullets - 1)
+                l > s.dynamicMains - 1
+                  ? (l = s.dynamicMains - 1)
                   : l < 0 && (l = 0)),
               (i = Math.max(p - l, 0)),
-              (o = i + (Math.min(a.length, s.dynamicMainBullets) - 1)),
+              (o = i + (Math.min(a.length, s.dynamicMains) - 1)),
               (u = (o + i) / 2)),
             a.removeClass(
               ["", "-next", "-next-next", "-prev", "-prev-prev", "-main"]
-                .map((e) => `${s.bulletActiveClass}${e}`)
+                .map((e) => `${s.ActiveClass}${e}`)
                 .join(" ")
             ),
             r.length > 1)
@@ -4199,35 +4199,35 @@
             a.each((e) => {
               const t = d(e),
                 a = t.index();
-              a === p && t.addClass(s.bulletActiveClass),
-                s.dynamicBullets &&
+              a === p && t.addClass(s.ActiveClass),
+                s.dynamics &&
                   (a >= i &&
                     a <= o &&
-                    t.addClass(`${s.bulletActiveClass}-main`),
+                    t.addClass(`${s.ActiveClass}-main`),
                   a === i && c(t, "prev"),
                   a === o && c(t, "next"));
             });
           else {
             const e = a.eq(p),
               r = e.index();
-            if ((e.addClass(s.bulletActiveClass), s.dynamicBullets)) {
+            if ((e.addClass(s.ActiveClass), s.dynamics)) {
               const e = a.eq(i),
                 n = a.eq(o);
               for (let e = i; e <= o; e += 1)
-                a.eq(e).addClass(`${s.bulletActiveClass}-main`);
+                a.eq(e).addClass(`${s.ActiveClass}-main`);
               if (t.params.loop)
                 if (r >= a.length) {
-                  for (let e = s.dynamicMainBullets; e >= 0; e -= 1)
-                    a.eq(a.length - e).addClass(`${s.bulletActiveClass}-main`);
-                  a.eq(a.length - s.dynamicMainBullets - 1).addClass(
-                    `${s.bulletActiveClass}-prev`
+                  for (let e = s.dynamicMains; e >= 0; e -= 1)
+                    a.eq(a.length - e).addClass(`${s.ActiveClass}-main`);
+                  a.eq(a.length - s.dynamicMains - 1).addClass(
+                    `${s.ActiveClass}-prev`
                   );
                 } else c(e, "prev"), c(n, "next");
               else c(e, "prev"), c(n, "next");
             }
           }
-          if (s.dynamicBullets) {
-            const i = Math.min(a.length, s.dynamicMainBullets + 4),
+          if (s.dynamics) {
+            const i = Math.min(a.length, s.dynamicMains + 4),
               r = (n * i - n) / 2 - u * n,
               l = e ? "right" : "left";
             a.css(t.isHorizontal() ? l : "top", `${r}px`);
@@ -4272,7 +4272,7 @@
               : t.slides.length,
           a = t.pagination.$el;
         let r = "";
-        if ("bullets" === e.type) {
+        if ("s" === e.type) {
           let i = t.params.loop
             ? Math.ceil((s - 2 * t.loopedSlides) / t.params.slidesPerGroup)
             : t.snapGrid.length;
@@ -4282,10 +4282,10 @@
             i > s &&
             (i = s);
           for (let s = 0; s < i; s += 1)
-            e.renderBullet
-              ? (r += e.renderBullet.call(t, s, e.bulletClass))
-              : (r += `<${e.bulletElement} class="${e.bulletClass}"></${e.bulletElement}>`);
-          a.html(r), (t.pagination.bullets = a.find(U(e.bulletClass)));
+            e.render
+              ? (r += e.render.call(t, s, e.Class))
+              : (r += `<${e.Element} class="${e.Class}"></${e.Element}>`);
+          a.html(r), (t.pagination.s = a.find(U(e.Class)));
         }
         "fraction" === e.type &&
           ((r = e.renderFraction
@@ -4316,19 +4316,19 @@
             ((s = t.$el.find(e.el)),
             s.length > 1 &&
               (s = s.filter((e) => d(e).parents(".swiper")[0] === t.el))),
-          "bullets" === e.type && e.clickable && s.addClass(e.clickableClass),
+          "s" === e.type && e.clickable && s.addClass(e.clickableClass),
           s.addClass(e.modifierClass + e.type),
           s.addClass(t.isHorizontal() ? e.horizontalClass : e.verticalClass),
-          "bullets" === e.type &&
-            e.dynamicBullets &&
+          "s" === e.type &&
+            e.dynamics &&
             (s.addClass(`${e.modifierClass}${e.type}-dynamic`),
             (l = 0),
-            e.dynamicMainBullets < 1 && (e.dynamicMainBullets = 1)),
+            e.dynamicMains < 1 && (e.dynamicMains = 1)),
           "progressbar" === e.type &&
             e.progressbarOpposite &&
             s.addClass(e.progressbarOppositeClass),
           e.clickable &&
-            s.on("click", U(e.bulletClass), function (e) {
+            s.on("click", U(e.Class), function (e) {
               e.preventDefault();
               let s = d(this).index() * t.params.slidesPerGroup;
               t.params.loop && (s += t.loopedSlides), t.slideTo(s);
@@ -4343,10 +4343,10 @@
         s.removeClass(e.hiddenClass),
           s.removeClass(e.modifierClass + e.type),
           s.removeClass(t.isHorizontal() ? e.horizontalClass : e.verticalClass),
-          t.pagination.bullets &&
-            t.pagination.bullets.removeClass &&
-            t.pagination.bullets.removeClass(e.bulletActiveClass),
-          e.clickable && s.off("click", U(e.bulletClass));
+          t.pagination.s &&
+            t.pagination.s.removeClass &&
+            t.pagination.s.removeClass(e.ActiveClass),
+          e.clickable && s.off("click", U(e.Class));
       }
       a("init", () => {
         !1 === t.params.pagination.enabled ? f() : (h(), u(), p());
@@ -4384,7 +4384,7 @@
             t.params.pagination.hideOnClick &&
             r &&
             r.length > 0 &&
-            !d(a).hasClass(t.params.pagination.bulletClass)
+            !d(a).hasClass(t.params.pagination.Class)
           ) {
             if (
               t.navigation &&
@@ -5594,7 +5594,7 @@
           nextSlideMessage: "Next slide",
           firstSlideMessage: "This is the first slide",
           lastSlideMessage: "This is the last slide",
-          paginationBulletMessage: "Go to slide {{index}}",
+          paginationMessage: "Go to slide {{index}}",
           slideLabelMessage: "{{index}} / {{slidesLength}}",
           containerMessage: null,
           containerRoleDescriptionMessage: null,
@@ -5645,12 +5645,12 @@
             ((t.isBeginning && !t.params.loop) || t.slidePrev(),
             t.isBeginning ? r(s.firstSlideMessage) : r(s.prevSlideMessage)),
           t.pagination &&
-            a.is(U(t.params.pagination.bulletClass)) &&
+            a.is(U(t.params.pagination.Class)) &&
             a[0].click();
       }
       function f() {
         return (
-          t.pagination && t.pagination.bullets && t.pagination.bullets.length
+          t.pagination && t.pagination.s && t.pagination.s.length
         );
       }
       function g() {
@@ -5751,7 +5751,7 @@
             g() &&
               t.pagination.$el.on(
                 "keydown",
-                U(t.params.pagination.bulletClass),
+                U(t.params.pagination.Class),
                 m
               ),
             t.$el.on("focus", x, !0),
@@ -5788,20 +5788,20 @@
             (function () {
               const e = t.params.a11y;
               f() &&
-                t.pagination.bullets.each((s) => {
+                t.pagination.s.each((s) => {
                   const a = d(s);
                   t.params.pagination.clickable &&
                     (n(a),
-                    t.params.pagination.renderBullet ||
+                    t.params.pagination.render ||
                       (o(a, "button"),
                       p(
                         a,
-                        e.paginationBulletMessage.replace(
+                        e.paginationMessage.replace(
                           /\{\{index\}\}/,
                           a.index() + 1
                         )
                       ))),
-                    a.is(`.${t.params.pagination.bulletActiveClass}`)
+                    a.is(`.${t.params.pagination.ActiveClass}`)
                       ? a.attr("aria-current", "true")
                       : a.removeAttr("aria-current");
                 });
@@ -5823,7 +5823,7 @@
                 g() &&
                   t.pagination.$el.off(
                     "keydown",
-                    U(t.params.pagination.bulletClass),
+                    U(t.params.pagination.Class),
                     m
                   ),
                 t.$el.off("focus", x, !0),
