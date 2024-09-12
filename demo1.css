@@ -2,7 +2,7 @@
 body{
 	min-height: 100vh;
 	width: 100%;
-	background: #b4e2f0;
+	background: #cfebf4;
 	}
 
 
@@ -46,14 +46,9 @@ a{
 .header .logo a{
 	font-size: 28px;
 	color:#000000;
-	font-weight: 700;
-	text-decoration: none;
+	margin-left:  10px;
+	bottom: 50%;
 }
-.logo img{
-	width: 110px;
-	height: 45px;
-}
-
 
 .header .item-center{
 	flex:0 0 66%;
@@ -166,8 +161,8 @@ a{
 .header .menu > ul > li .sub-menu > ul > li > a:hover,
 .header .item-right a:hover,
 .header .menu > ul > li:hover > a{
-	color:#ea4636;
-    background-color: #0077B5;
+	color:#000000;
+    background-color: hsl(193, 66%, 64%);
 }
 /* banner section */
 
@@ -212,8 +207,8 @@ a{
 		content: '';
 		position: absolute;
 		left:0;
-		width: 100%;
-		height: 100%;
+		width: 150%;
+		height: 120%;
 		background-color: #333333;
 	}
 	.header .mobile-menu-trigger span:before{
@@ -715,12 +710,44 @@ strong{
 
 /* mobile-cards start */
 @media (max-width: 700px){
+
+	.logo{
+		width: 80px;
+		height: 34px;
+		align-items: center;
+		
+	}
+
+	.btn1 {
+		border: 2px solid #000000;
+		font-weight: 500;
+		background-color: rgb(15, 96, 114);
+		color: #000000;
+		padding: 1px 5px;
+		border-radius: 50px;
+		width: 120px;
+margin-left: 50%;	
+
+	}
+	.btn1:hover {
+		border-radius: 50px;
+		border: 2px solid rgb(134, 216, 235);
+		background-color: #000000;
+		color: rgb(134, 216, 235);
+		transform: scale(1.1);
+	
+	}
+	.btn1 a{
+		color: #9ff9fc;
+	}
+	
+
 		h1 {
 		font-size: 18px;
 		text-transform: uppercase;
 	  }
-	  p{
-		font-size: 12px;
+	  .paragraph{
+		font-size: 10px;
 		font-weight: 500;
 	  }
 
@@ -733,6 +760,7 @@ strong{
 .card{
     border-radius: 30px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+	height: 246px;
 }
 .card-body{
     padding: 15px;
@@ -772,6 +800,11 @@ strong{
 
 }
 }
+@media (max-width: 1440px){
+	.card{
+		width: 1440px, 2160px;
+	}
+}
 
 /* mobile-cards end */
 
@@ -795,6 +828,10 @@ strong{
 	
 
 }
+
+
+/* start table */
+
 	  
 	/*end paragraph  */
 	  
@@ -842,16 +879,16 @@ strong{
 	  font-size: 30px;
 	  
 	  }
-	  .logo-details h6{
+	  .logo-footer h6{
 	  font-size: 1.3vw;
 	  color: #87d7f7;
 	  text-align: center;
+
 	  }
 	  
-	  .logo-details span{
-	  font-size: 5vw; 
-	  font-weight: bold; 
-	  
+	  .logo-footer a{
+		font-size: 45px; text-align: center; font-weight: bold; color: #bddef3;
+		margin-left: 13%;
 	  
 	  }
 	  
@@ -968,7 +1005,7 @@ strong{
 	  background: #fff;
 	  color: #140B5C;
 	  border: none;
-	  font-size: 18px;
+	  font-size: 88px;
 	  font-weight: 500;
 	  margin: 4px 0;
 	  opacity: 0.8;
@@ -1019,7 +1056,7 @@ strong{
 		
 		}
 		
-	  .logo-details h6{
+	  .logo-footer h6{
 		font-size: 2vw;
 		color: #87d7f7;
 		align-items: center;
@@ -1075,18 +1112,13 @@ strong{
 		color: rgb(134, 216, 235);
 	}
 	  }
-	  .copyright p{
-	  margin-top:-8vh;
-	  text-align: center;
-	  color: var(--background);
-	  }
 	  
 	  /* end page7 */
 	
 	
 
 footer{
-	background: #140B5C;
+	background: #09596f;
 	width: 100%;
 	bottom: 0;
 	left: 0;
@@ -1115,7 +1147,7 @@ footer{
 	font-size: 30px;
 	
 	}
-	.logo-details h6{
+	.logo-footer h6{
 	font-size: 1.3vw;
 	color: #87d7f7;
 	text-align: center;
@@ -1225,8 +1257,8 @@ footer{
 	height: 40px;
 	width: calc(100% + 55px);
 	outline: none;
-	border: 2px solid #AFAFB6;
-	background: #140B5C;
+	border: 1px solid #06363f;
+	background: #328eac;
 	border-radius: 4px;
 	padding: 0 15px;
 	font-size: 15px;
@@ -1253,22 +1285,26 @@ footer{
 	}
 	footer .bottom-details{
 	width: 100%;
-	background: #0F0844;
+	background: #18536c;
 	}
 	footer .bottom-details .bottom_text{
 	max-width: 1250px;
 	margin: auto;
 	padding: 20px 40px;
-	display: flex;
+align-items: center;	display: flex;
 	justify-content: space-between;
 	}
-	.bottom-details .bottom_text span,
+	.bottom-details .bottom_text span{
+		opacity: 1;
+		color: #ffffff;	
+	}
 	.bottom-details .bottom_text a:hover{
 	opacity: 1;
-	text-decoration: underline;
+	color: #21b1c1;
 	}
 	.bottom-details .bottom_text a{
 	margin-right: 10px;
+	color: #0bf235;
 	}
 	@media (max-width: 900px) {
 	footer .content .link-boxes{
@@ -1292,7 +1328,7 @@ footer{
 	  
 	  }
 	  
-	.logo-details h6{
+	.logo-footer h6{
 	  font-size: 2vw;
 	  color: #87d7f7;
 	  align-items: center;
