@@ -713,10 +713,7 @@ strong{
 
 /* mobile-cards start */
 @media (max-width: 700px){
-	.header{
-		position: sticky;
-		top: 0;
-	}
+
 
 	.logo{
 		width: 80px;
