@@ -43,6 +43,7 @@ a{
 	flex:0 0 17%;
 	
 }
+
 .header .logo a{
 	font-size: 28px;
 	color:#000000;
@@ -90,6 +91,7 @@ a{
 	opacity:0;
 	visibility: hidden;
 }
+
 @media(min-width: 992px){
 .header .menu > ul > li.menu-item-has-children:hover .sub-menu{
 	margin-top: 0;
@@ -346,6 +348,7 @@ a{
 		transform: translateX(100%);	
 	}
 }
+
 	.header .menu > ul > li .sub-menu.mega-menu-column-4 > .list-item img{
 		margin-top:0;
 	}
@@ -710,6 +713,10 @@ strong{
 
 /* mobile-cards start */
 @media (max-width: 700px){
+	.header{
+		position: sticky;
+		top: 0;
+	}
 
 	.logo{
 		width: 80px;
@@ -717,6 +724,7 @@ strong{
 		align-items: center;
 		
 	}
+	
 	.whatsapp-text {
         text-decoration: none;
         position: fixed;
