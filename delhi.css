@@ -502,7 +502,132 @@ a{
 	text-align: center  ;
   }
   }
-  
+
+.page4-part2 h6 {
+    font-size: 2vw;
+    color: #000;
+    text-transform: capitalize;
+    padding-top: 5vh;
+    text-align: center;
+    font-weight: 700;
+    font-family: poppins;
+}
+
+.page4-part2 h5 {
+    font-size: 2.5vw;
+    text-align: center;
+    font-weight: 700;
+    font-family: poppins;
+    color: var(--text);
+    margin-bottom: 5vh;
+}
+
+.page4-part2 a {
+    font-size: 1.4vw;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: var(--btn);
+    padding: 1vw 2vw;
+    border-radius: 2vw;
+    text-decoration: none;
+    color: var(--background);
+    font-family: poppins;
+    margin-left: 45vw;
+}
+
+.page4-part2 a:hover{
+    background-color: var(--btnhover);
+    transition: all linear 0.3s;
+}
+.footer-btn a{
+		padding: 5px 12px;
+		border: 2px solid #000000;
+		border-radius: 50px;
+		font-weight: 500;
+		background-color: rgb(134, 216, 235);
+		color: #000000;
+		margin-bottom: 75px;
+	}
+ .footer-btn a:hover{
+		background-color: #000000;
+		color: rgb(134, 216, 235);
+		transform: scale(1.1);
+	
+	}
+
+
+/* responsive part */ 
+
+@media (max-width:440px){
+
+.page4-part2 h6{
+    font-size: 5vw;
+}
+
+.page4-part2 h5{
+    font-size: 5vw;
+}
+
+.page4-part2 a{
+    font-size: 4vw;
+    padding: 2vw 8vw;
+    margin-left:30vw;
+
+}}
+
+
+/* START  RESPONSIVE FOR LARGE DESKTOP SCREEN SIZES ✅ */
+ 
+@media (min-width:1500px){
+
+
+.page4-part2 {
+    height: 32vh;
+    width: 100%;
+    background-color: var(--background);
+    margin-top: 10vh;
+
+}
+
+.page4-part2 h6 {
+    font-size: 2vw;
+    color: #000;
+    text-transform: capitalize;
+    padding-top: 5vh;
+    text-align: center;
+    font-weight: 700;
+    font-family: poppins;
+}
+
+.page4-part2 h5 {
+    font-size: 2.5vw;
+    text-align: center;
+    font-weight: 700;
+    font-family: poppins;
+    color: var(--text);
+    margin-bottom: 5vh;
+}
+
+.page4-part2 a {
+    font-size: 1.4vw;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: var(--btn);
+    padding: 1vw 2vw;
+    border-radius: 2vw;
+    text-decoration: none;
+    color: var(--background);
+    font-family: poppins;
+    margin-left: 43vw;
+}
+
+.page4-part2 a:hover{
+    transition: all linear 0.3s;
+}
+}
+
+
+
   
   /* end table */
   
@@ -819,9 +944,17 @@ color: #fff;
 	/* slider end */
 
    /* start align image */
+
+   .page3{
+	text-align: center;
+   }
+   .page3 strong{
+	text-align: center;
+	font-size: 40px;
+   }
    
    .page4-section1, .page4-section-3, .page4-section2, .page4-section4{
-    padding-top: 2vh;
+    padding-top: 5vh;
     margin-left: 2vw;
     display: flex;
     gap: 2vw;
@@ -890,7 +1023,7 @@ color: #fff;
 
 @media (max-width:440px){
 .page4-section1{
-    padding-top: 2vh;
+    padding-top: 12vh;
     margin-left: 2vw;
     display: flex;
     flex-direction: column;
@@ -899,6 +1032,17 @@ color: #fff;
     padding-bottom: 4vw;
     margin-right: 1vw;
 }
+.page3{
+	text-align: center;
+   }
+   .page3 strong{
+	text-align: center;
+	font-size: 20px;
+   }
+   .page3 p{
+	text-align: center;
+	font-size: 10px;
+   }
 
 
 .page4-section2{
@@ -985,7 +1129,7 @@ color: #fff;
     }
     
     
-    .click-call a:hover{
+    .click-call:hover{
 		border-radius: 50px;
 	border: 2px solid rgb(134, 216, 235);
 	transform: scale(1.1);
