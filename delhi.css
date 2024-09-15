@@ -1180,22 +1180,23 @@ color: #fff;
 /* cards start */
 
 .card-img-top{
-    border-radius: 10px;
     padding: 20px;
+
 }
 
-#ac-card1{
-	text-wrap: wrap;
-	border-radius: 30px;
-	height: 40vh;
-	background: #1d6b81;
-	}
 	
 
 .card{
-    border-radius: 31px;
+    border-radius: 15px;
 	border: 2px solid red;
 	border: 1px solid rgb(2, 32, 50);
+}
+.card img{
+	background-color: #22656c;
+	border: 2px solid rgb(2, 32, 50);
+	border-radius: 5px;
+
+
 }
 .card-body{
     padding: 25px;
@@ -1302,16 +1303,9 @@ margin-left: 50%;
     padding: 10px;
 }
 
-#ac-card1{
-	border-radius: 31px;
-	text-wrap: wrap;
-  height: 14vh;
-	background: #1d6b81;
-	}
 
 .card{
     border-radius: 32px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
 		box-shadow: 0 0 0.2rem black;
 
 }
