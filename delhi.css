@@ -27,12 +27,12 @@ ul{
 }
 a{
 	text-decoration: none;
-	color: #0d5a1b;
+	color: #ff0000;
 	font-weight: 600;
 	flex-wrap: wrap;
 }
 a:hover{
-	color: red;
+	color: rgb(21, 40, 165);
 }
 /* header */
 .header{
@@ -1018,7 +1018,11 @@ color: #fff;
     color: #fbfeff;
     }
     
-
+	.content-part h3{
+			font-weight: 600;
+	
+	}
+	
 
 
 
@@ -1105,6 +1109,7 @@ color: #fff;
     margin-top: 1vh;
     text-align: center;
     margin-bottom: 3vh;
+	font-weight: 600;
 
 }
 
@@ -1178,11 +1183,15 @@ color: #fff;
 
 
 /* cards start */
-
 .card-img-top{
-    padding: 20px;
+	padding: 13px;
+}
+
+.card-img-top:hover{
+scale: 1.01;
 
 }
+
 
 	
 
@@ -1195,9 +1204,8 @@ color: #fff;
 	background-color: #22656c;
 	border: 2px solid rgb(2, 32, 50);
 	border-radius: 5px;
-
-
 }
+
 .card-body{
     padding: 25px;
     margin-top: -15px;
@@ -1306,7 +1314,6 @@ margin-left: 50%;
 
 .card{
     border-radius: 32px;
-		box-shadow: 0 0 0.2rem black;
 
 }
 .card-body{
