@@ -1180,21 +1180,17 @@ color: #fff;
 /* cards start */
 
 .card-img-top{
-    border-radius: 50px;
+    border-radius: 10px;
     padding: 20px;
 }
-.card img {
-    animation: zoom-in-zoom-out 3s ease infinite;}
 
-    @keyframes zoom-in-zoom-out {
-        50% {
-          transform: scale(1.02, 1.02);
-                }
-            }
-.image-box img:hover{
-scale: 1.1;
-
-}
+#ac-card1{
+	text-wrap: wrap;
+	border-radius: 30px;
+	height: 40vh;
+	background: #1d6b81;
+	}
+	
 
 .card{
     border-radius: 30px;
@@ -1226,6 +1222,7 @@ scale: 1.1;
 
 h2{
     color: rgb(6, 84, 101);
+	margin-top: 10px;
 }
 strong{
 	font-size: 25px;
@@ -1252,7 +1249,7 @@ strong{
 /* cards end */
 
 /* mobile-cards start */
-@media (max-width: 700px){
+@media (max-width: 540px){
 	.header{
 		position: sticky;
 		top: 0;
@@ -1271,7 +1268,6 @@ strong{
         height: 86vw;
         bottom: -180px;
         z-index: 10;
-        border-radius: 50vw;
         left: 4vw;
        }
             .whatsapp-img{
@@ -1341,15 +1337,17 @@ margin-left: 50%;
 	  }
 
 
-.card-img-top{
-    border-radius: 35px;
-    padding: 20px;
-	
-}
+
+#ac-card1{
+	text-wrap: wrap;
+  height: 14vh;
+	background: #1d6b81;
+	}
+
 .card{
-    border-radius: 30px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
-	height: 246px;
+		box-shadow: 0 0 0.2rem black;
+
 }
 .card-body{
     padding: 15px;
