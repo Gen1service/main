@@ -1193,7 +1193,7 @@ color: #fff;
 	
 
 .card{
-    border-radius: 30px;
+    border-radius: 31px;
 	border: 2px solid red;
 	border: 1px solid rgb(2, 32, 50);
 }
@@ -1249,7 +1249,7 @@ strong{
 /* cards end */
 
 /* mobile-cards start */
-@media (max-width: 540px){
+@media (max-width: 700px){
 	.header{
 		position: sticky;
 		top: 0;
@@ -1261,46 +1261,6 @@ strong{
 		align-items: center;
 		
 	}
-	.whatsapp-text {
-        text-decoration: none;
-        position: fixed;
-        width: 40vw;
-        height: 86vw;
-        bottom: -180px;
-        z-index: 10;
-        left: 4vw;
-       }
-            .whatsapp-img{
-                width: 26%;
-                height: 12%;
-                
-            
-            }
-
-            .call-icon {
-                text-decoration: none;
-                position: fixed;
-                width: 40vw;
-                height: 86vw;
-                bottom: -180px;
-                z-index: 10;
-                border-radius: 50vw;
-                right:-28vw;
-           }
-                .call-img{
-                    width: 26%;
-                    height: 12%;
-                    
-                    
-                }
-                    
-        .call-text a{
-    padding: 1vw 2vw;
-    right: -10vw;
-    font-size: 3.5vw;
-    top: 45vh;
-}
-
 
 	.btn1 {
 		border: 2px solid #000000;
@@ -1337,14 +1297,20 @@ margin-left: 50%;
 	  }
 
 
+.card-img-top{
+    border-radius: 35px;
+    padding: 10px;
+}
 
 #ac-card1{
+	border-radius: 31px;
 	text-wrap: wrap;
   height: 14vh;
 	background: #1d6b81;
 	}
 
 .card{
+    border-radius: 32px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
 		box-shadow: 0 0 0.2rem black;
 
