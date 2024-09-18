@@ -484,6 +484,7 @@ a:hover{
 	text-align: left;
 	padding: 0.5vw;
 	font-size: 0.9vw;
+	font-weight: 500;
 	text-align: center;
   }
   
@@ -494,6 +495,7 @@ a:hover{
   @media (max-width:440px){
   
   td,th{
+	font-weight: 500;
 	font-size: 1.5vw;
 	text-wrap: balance;
 	text-align: center  ;
@@ -952,7 +954,7 @@ color: #fff;
    }
    .page3 strong{
 	text-align: center;
-	font-size: 40px;
+	font-size: 30px;
    }
    
    .page4-section1, .page4-section-3, .page4-section2, .page4-section4{
@@ -1022,12 +1024,23 @@ color: #fff;
 			font-weight: 600;
 	
 	}
+	.welcome{
+		margin-top: 20px;
+		text-align: center;
+		font-weight: 500;
+
+	}
 	
 
 
 
 
 @media (max-width:440px){
+	.welcome{
+		margin-top: 10px;
+		text-align: center;
+		font-size: 11px;
+	}
 .page4-section1{
     padding-top: 12vh;
     margin-left: 2vw;
@@ -1177,9 +1190,15 @@ color: #fff;
 
 
    /* end align image */
+   
+
+.wel-p strong{
+	font-size: 1vw;
+	color: #0bf235;
+}
 
 
-
+  
 
 
 /* cards start */
@@ -1570,18 +1589,25 @@ strong{
 	  color: #AFAFB6;
 	  font-size: 16px;
 	  }
-	  .link-boxes .input-box input[type="button"]{
-	  background: #fff;
+	  .add-box{
+		color: #404097;
+		font-size: 56px;
+		}
+  
+	  [type="submit"]{
+	  background: #d7401e;
 	  color: #140B5C;
 	  border: none;
-	  font-size: 88px;
+	  font-size: 20px;
+	  padding: 8px 15px;
+	  border-radius: 50px;
 	  font-weight: 500;
 	  margin: 4px 0;
 	  opacity: 0.8;
 	  cursor: pointer;
 	  transition: all 0.4s ease;
 	  }
-	  .input-box input[type="button"]:hover{
+	[type="submit"]:hover{
 	  opacity: 1;
 	  }
 	  footer .bottom-details{
