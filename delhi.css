@@ -5,6 +5,8 @@ body{
 	background: #cfebf4;
 	}
 
+		
+
 
 :before,:after{
 	box-sizing: border-box;
@@ -422,6 +424,87 @@ a:hover{
 	  transform: translateX(0px);
 	}
   }
+  .whatsapp-text{
+	text-decoration: none;
+	position: fixed;
+	width: 150px;
+	height: 150px;
+	bottom: -11px;
+	z-index: 99;
+	font-family: poppins;
+	border-radius: 50vh;
+	right: -11vh;
+	}
+	.whatsapp-img{
+		width: 70px;
+		height: 70px;
+		
+	}
+	.whatsapp-img {
+		animation: zoom-in-zoom-out 2s ease infinite;}
+	
+		@keyframes zoom-in-zoom-out {
+			50% {
+			  transform: scale(1.1, 1.1);
+					}
+				}
+  
+	.call-icon{
+		text-decoration: none;
+		position: fixed;
+		width: 152px;
+		height: 152px;
+		bottom: 10px;
+		z-index: 99;
+		font-family: poppins;
+		border-radius: 50vh;
+		left: 1vh;
+	  }
+		.call-img{
+			width: 122px;
+			height: 122px;
+			
+		}
+	   
+  
+	
+  
+  
+  .call-text a{
+	text-decoration: none;
+	position: fixed;
+	background-color: rgb(22, 5, 85);
+	color: rgb(135, 239, 23);
+	padding: 0.4vw 0.8vw;
+	border: 1px solid #91ef15;
+	z-index: 99;
+	font-family: poppins;
+	border-radius: 0.2vw;
+	right: -4vw;
+	rotate: -89.4deg;
+	top: 50vh;
+	}
+	.call-text a:hover{
+		background-color: #096822;
+		color: #f3f710;
+		box-shadow: 15px 15px 666px;
+	}
+	.call-text a {
+		-webkit-animation: action 1s infinite  alternate;
+		animation: action 1s infinite  alternate;
+	}
+	
+	@-webkit-keyframes action {
+		0% { transform: translateY(0); }
+		100% { transform: translateY(-10px); }
+	}
+	
+	@keyframes action {
+		0% { transform: translateY(0); }
+		100% { transform: translateY(-10px); }
+	}
+  
+  /* end book service message */
 
 
 
@@ -493,6 +576,62 @@ a:hover{
   }
   
   @media (max-width:440px){
+	.whatsapp-text{
+		text-decoration: none;
+		position: fixed;
+		width: 150px;
+		height: 150px;
+		bottom: 5px;
+		z-index: 99;
+		font-family: poppins;
+		border-radius: 50vh;
+		right: -11vh;
+		}
+		.whatsapp-img{
+			width: 60px;
+			height: 60px;
+			
+		}
+	
+	  
+		.call-icon{
+			text-decoration: none;
+			position: fixed;
+			width: 100px;
+			height: 100px;
+			bottom: -10px;
+			z-index: 99;
+			font-family: poppins;
+			border-radius: 50vh;
+			margin-left: 36vh;
+		}
+			.call-img{
+				width: 145px;
+				height: 100px;
+				
+			}
+		   
+	  
+		
+	  
+	  
+	  .call-text a{
+		text-decoration: none;
+		position: fixed;
+		background-color: rgb(22, 5, 85);
+		color: rgb(135, 239, 23);
+		padding: 0.4vw 0.8vw;
+		border: 1px solid #91ef15;
+		z-index: 99;
+		font-family: poppins;
+		border-radius: 0.2vw;
+		right: -12vw;
+		rotate: -89.4deg;
+		top: 50vh;
+		}
+
+	  
+	  /* end book service message */
   
   td,th{
 	font-weight: 500;
@@ -503,7 +642,7 @@ a:hover{
   }
 
 .page4-part2 h6 {
-    font-size: 4vw;
+    font-size: 3vw;
     color: #000;
     text-transform: capitalize;
     padding-top: 2vh;
@@ -514,7 +653,7 @@ a:hover{
 }
 
 .page4-part2 h5 {
-    font-size: 2.5vw;
+    font-size: 2vw;
     text-align: center;
     font-weight: 500;
     font-family: poppins;
@@ -544,7 +683,7 @@ a:hover{
 		border-radius: 50px;
 		font-weight: 500;
 		background-color: rgb(134, 216, 235);
-		color: #000000;
+		color: #ce1b1b;
 		margin-bottom: 75px;
 	}
  .footer-btn a:hover{
@@ -564,18 +703,19 @@ a:hover{
 }
 
 .page4-part2 h6{
-    font-size: 4vw;
+    font-size: 3.5vw;
 	bottom: 15px;
 }
 
 .page4-part2 h5{
-    font-size: 4vw;
+    font-size: 3vw;
 }
 
 .page4-part2 a{
-    font-size: 4vw;
+    font-size: 2.5vw;
     padding: 2vw 8vw;
-    margin-left:30vw;
+    margin-left:25vw;
+	font-weight: 600;
 
 }}
 
@@ -1215,12 +1355,12 @@ scale: 1.01;
 	
 
 .card{
-    border-radius: 15px;
+    border-radius: 7px;
 	border: 2px solid red;
 	border: 1px solid rgb(2, 32, 50);
 }
 .card img{
-	background-color: #22656c;
+	background-color: #2f969d;
 	border: 2px solid rgb(2, 32, 50);
 	border-radius: 5px;
 }
@@ -1332,7 +1472,7 @@ margin-left: 50%;
 
 
 .card{
-    border-radius: 32px;
+    border-radius: 9px;
 
 }
 .card-body{
@@ -1476,7 +1616,6 @@ strong{
 	  
 	  .logo-footer a{
 		font-size: 45px; text-align: center; font-weight: bold; color: #bddef3;
-		margin-left: 13%;
 	  
 	  }
 	  
@@ -1595,12 +1734,12 @@ strong{
 		}
   
 	  [type="submit"]{
-	  background: #d7401e;
+	  background: #de2e28;
 	  color: #140B5C;
 	  border: none;
 	  font-size: 20px;
 	  padding: 8px 15px;
-	  border-radius: 50px;
+	  border-radius: 18px;
 	  font-weight: 500;
 	  margin: 4px 0;
 	  opacity: 0.8;
